@@ -97,3 +97,9 @@ label :last-child{
   justify-content: space-between;
   align-items: center;
 }
+
+@media(max-width:992px){
+  .search-btn{
+    bottom: 7rem;
+  }
+}
