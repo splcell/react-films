@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,91 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.menu{
+  padding: 0 1rem;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  height: calc(130vh - 70px - 64px);
+}
+
+.content{
+  flex-grow: 1;
+  padding: 1.3rem 0;
+}
+
+footer{
+  padding: 0 1rem;
+}
+
+.movies{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card-content .movie{
+  padding: .5rem;
+  background-color: dodgerblue;
+  border-radius: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.card .card-title{
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 6.4rem;
+}
+
+
+.series{
+  padding: .5rem;
+  background-color: orange;
+  border-radius: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.movie-img{
+  height: 457px;
+}
+
+.search-btn{
+  position: absolute;
+  bottom: 6.9rem;
+  right: 1.5rem;
+}
+
+form{
+  position: relative;
+}
+
+.filter{
+  display: flex;
+  justify-content: center;
+}
+
+label{
+  margin-right: 2rem;
+}
+
+label :last-child{
+  margin-right: 0;
+}
+
+.card-content p{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
